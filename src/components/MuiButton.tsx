@@ -1,4 +1,4 @@
-import {Stack,Button,IconButton} from '@mui/material'
+import {Stack,Button,IconButton,ButtonGroup} from '@mui/material'
 import SendIcon from '@mui/icons-material/Send'
 
 export const MuiButton=()=>{
@@ -16,33 +16,41 @@ export const MuiButton=()=>{
                     <Button variant='contained' color='secondary'>Secondary</Button>
                     <Button variant='contained' color='warning'>Warning</Button>
                     <Button variant='contained' color='error'>Error</Button>
-                     <Button variant='contained' color='info'>info</Button>
+                    <Button variant='contained' color='info'>info</Button>
                     <Button variant='contained' color='success'>success</Button>
-                 
                 </Stack>
 
                 <Stack spacing={2} direction='row' display='block'>
                     <Button variant='contained' size='small'>Small</Button>
                     <Button variant='contained' size='medium'>Medium</Button>
                     <Button variant='contained' size='large'>Large</Button>
-
-                 
                 </Stack>
 
                 
                 <Stack spacing={2} direction='row'>
                     <Button variant='contained' startIcon={<SendIcon/>}>Send</Button>
                     <Button variant='contained' endIcon={<SendIcon/>}>Send</Button>
-                   <IconButton aria-aria-label='send' color='success' size='large'>
+                    <IconButton aria-aria-label='send' color='success' size='large'>
                         <SendIcon/>
                     </IconButton>
                     <Button variant='contained' endIcon={<SendIcon/>} disableElevation onClick={()=> alert('Clicked Disabled Elevation')}> Disable Elevation</Button>  
-                      <Button variant='contained' endIcon={<SendIcon/>} disableRipple onClick={()=> alert('Clicked Disabled Ripple')}> Disable Ripple</Button>      
+                    <Button variant='contained' endIcon={<SendIcon/>} disableRipple onClick={()=> alert('Clicked Disabled Ripple')}> Disable Ripple</Button>      
                 </Stack>
 
-                <Stack spacing={2} direction='row'>
-                 
-                  
+                <Stack direction='row'>
+                    <ButtonGroup variant='outlined' >
+                        <Button >Left</Button>
+                        <Button >Center</Button>
+                        <Button >Right</Button>
+                    </ButtonGroup>
+                </Stack>
+                
+                <Stack direction='row'>
+                    <ButtonGroup variant='text' orientation='vertical' size='small' aria-label='alignment button group'>
+                        <Button onClick={()=>alert('left clicked')}>Left</Button>
+                        <Button >Center</Button>
+                        <Button >Right</Button>
+                    </ButtonGroup>
                 </Stack>
 
 
