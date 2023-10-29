@@ -1,7 +1,8 @@
-import {Box,Divider,Stack} from '@mui/material'
+import {Box,Divider,Stack,Grid} from '@mui/material'
 
 export const MuiLayout=()=>{
     return (
+        <>
         <Stack 
             sx={{border:'1px solid'}} 
             direction='row' 
@@ -36,5 +37,29 @@ export const MuiLayout=()=>{
                 Hello without Sx
             </Box>
         </Stack>
+
+        <Grid container my={4} rowSpacing={2} columnSpacing={3}> 
+
+        {/* xs for mobile
+        sm for tablet
+        md for desktop
+        lg and xl for larger monitors */}
+        
+            <Grid item xs={12} sm={6} md={4}>
+                <Box bgcolor='primary.light' p={2}>Item1</Box>
+            </Grid>
+            <Grid item xs={12} sm={6} md={4}>
+                <Box bgcolor='primary.light' p={2}>Item2</Box>
+            </Grid>
+            <Grid item xs={12} sm={6} md={4}>
+                <Box bgcolor='primary.light' p={2}>Item3</Box>
+            </Grid>
+            <Grid item xs={12} sm={6} md={4}>
+                <Box bgcolor='primary.light' p={2}>Item4</Box>
+            </Grid>
+        </Grid>
+        
+        </>
+     
     )
 }
