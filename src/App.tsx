@@ -5,7 +5,8 @@ import './App.css';
 // import { MuiTextField } from './components/MuiTextField';
 // import {MuiRadioButton} from './components/MuiRadioButton'
 // import {MuiSelect} from './components/MuiSelect';
-import { MuiCheckbox } from './components/MuiCheckbox';
+//import { MuiCheckbox } from './components/MuiCheckbox';
+import { MuiSwitch } from './components/MuiSwitch';
 function App() {
    
   return (
@@ -15,7 +16,8 @@ function App() {
     {/* <MuiTextField/> */}
     {/* <MuiSelect/> */}
     {/* <MuiRadioButton/> */}
-    <MuiCheckbox/>
+    {/* <MuiCheckbox/> */}
+    <MuiSwitch/>
     </div>
   );
 }
