@@ -1,8 +1,17 @@
-import {Box,Divider,Stack,Grid} from '@mui/material'
+import {
+    Box,
+    Divider,
+    Stack,
+    Grid,
+    Paper
+} from '@mui/material'
 
 export const MuiLayout=()=>{
     return (
-        <>
+        <Paper
+            sx={{padding:'32px'}} 
+            elevation={2} //Box shadow
+        >
         <Stack 
             sx={{border:'1px solid'}} 
             direction='row' 
@@ -59,7 +68,9 @@ export const MuiLayout=()=>{
             </Grid>
         </Grid>
         
-        </>
+        {/* paper great component for create layout and VERY IMPORTANT */}
+
+        </Paper>
      
     )
 }
